@@ -7,6 +7,8 @@ body {
     font-family: Lato, "Microsoft YaHei", sans-serif; /* Шрифт для всего тела */
     font-weight: 400; /* Нормальный вес шрифта */
     font-size: 1.1em; /* Размер шрифта */
+    background-color: #f4f4f4; /* Цвет фона страницы */
+    color: #333; /* Цвет текста */
 }
 
 /* Заголовки */
@@ -14,65 +16,56 @@ h1 {
     font-size: 3.5em; /* Размер шрифта для h1 */
     margin: 0 0 0.5em 0; /* Отступы */
     margin-top: 0; /* Убирает верхний отступ */
+    color: #2c3e50; /* Цвет заголовка h1 */
 }
 
 h2 {
     font-size: 2em; /* Размер шрифта для h2 */
     margin: 0 0 0.2em 0; /* Отступы */
     margin-top: 0; /* Убирает верхний отступ */
+    color: #34495e; /* Цвет заголовка h2 */
 }
 
 h3 {
     font-size: 1.5em; /* Размер шрифта для h3 */
     margin: 0 0 0.1em 0; /* Отступы */
     margin-top: 0; /* Убирает верхний отступ */
+    color: #7f8c8d; /* Цвет заголовка h3 */
 }
 
-h4 {
-    font-size: 1.25em; /* Размер шрифта для h4 */
-    margin: 0 0 0.1em 0; /* Отступы */
-    margin-top: 0; /* Убирает верхний отступ */
-}
-
-h5 {
-    font-size: 1.2em; /* Размер шрифта для h5 */
-    margin: 0 0 0.1em 0; /* Отступы */
-    margin-top: 0; /* Убирает верхний отступ */
-}
-
-h6 {
-    font-size: 1.1em; /* Размер шрифта для h6 */
-    margin: 0 0 0.1em 0; /* Отступы */
-    margin-top: 0; /* Убирает верхний отступ */
+h4, h5, h6 {
+    color: #7f8c8d; /* Цвет заголовков h4, h5, h6 */
 }
 
 /* Параграфы и списки */
 p {
     font-size: 1.1em; /* Размер шрифта для параграфов */
     margin: 0.5em 0; /* Отступы */
+    color: #555; /* Цвет текста для параграфов */
 }
 
 ul {
     font-size: 1.1em; /* Размер шрифта для списков */
+    color: #555; /* Цвет текста для списков */
 }
 
 /* Ссылки */
 a {
-    color: #008a75; /* Цвет ссылок */
+    color: #2980b9; /* Цвет ссылок */
     text-decoration: none; /* Убирает подчеркивание */
     transition: 0.5s; /* Плавный переход */
 }
 
 a:hover {
-    color: #9f3; /* Цвет ссылки при наведении */
+    color: #3498db; /* Цвет ссылки при наведении */
 }
 
 a.highlight {
-    color: #9f3; /* Цвет выделенной ссылки */
+    color: #e67e22; /* Цвет выделенной ссылки */
 }
 
 a.highlight:hover {
-    color: #008a75; /* Цвет выделенной ссылки при наведении */
+    color: #2980b9; /* Цвет выделенной ссылки при наведении */
 }
 
 /* Панель выбора языка */
@@ -92,18 +85,14 @@ a.highlight:hover {
 }
 
 #lang-panel .lang.selected {
-    background-color: #aee2d9; /* Цвет фона для выбранного языка */
-    color: #008a75; /* Цвет текста для выбранного языка */
+    background-color: #d5e8d4; /* Цвет фона для выбранного языка */
+    color: #2c3e50; /* Цвет текста для выбранного языка */
     cursor: default; /* Курсор по умолчанию */
 }
 
 /* Цвета текста */
-p {
-    color: #aee2d9; /* Цвет текста для параграфов */
-}
-
 h1 {
-    text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9; /* Тень для заголовка h1 */
+    text-shadow: 1px 2px #bdc3c7, 2px 4px #ecf0f1; /* Тень для заголовка h1 */
     text-align: center; /* Выравнивание по центру */
 }
 
@@ -116,12 +105,8 @@ h2 + h1 {
 }
 
 h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
-    color: #008a75; /* Цвет для выделенного текста */
+    color: #2980b9; /* Цвет для выделенного текста */
     font-style: normal; /* Нормальный стиль шрифта */
-}
-
-ul {
-    color: #aee2d9; /* Цвет текста для списков */
 }
 
 /* Заголовок и подзаголовок */
@@ -131,7 +116,7 @@ ul {
 
 #subtitle {
     margin: 1em 0 0.25em 0; /* Отступы */
-    color: #aee2d9; /* Цвет подзаголовка */
+    color: #7f8c8d; /* Цвет подзаголовка */
 }
 
 /* Панель тегов */
@@ -140,14 +125,14 @@ ul {
 }
 
 .tag {
-    background-color: #096254; /* Цвет фона для тегов */
-    color: #aee2d9; /* Цвет текста для тегов */
+    background-color: #16a085; /* Цвет фона для тегов */
+    color: #ecf0f1; /* Цвет текста для тегов */
     border-radius: 3px; /* Закругленные углы */
     display: inline-block; /* Отображение в строку */
     padding: 2px 8px; /* Отступы */
     margin-right: 3px; /* Отступ справа */
     margin-bottom: 3px; /* Отступ снизу */
-    opacity: 0.5; /* Прозрачность */
+    opacity: 0.8; /* Прозрачность */
 }
 
 .tag.expert {
@@ -166,8 +151,8 @@ ul {
 
 /* Секции */
 .section {
-    background-color: #22c3aa; /* Цвет фона для секций */
-    color: #eef3f0; /* Цвет текста для секций */
+    background-color: #1abc9c; /* Цвет фона для секций */
+    color: #ecf0f1; /* Цвет текста для секций */
     padding: 50px; /* Отступы */
     transition: 0.5s; /* Плавный переход */
 }
@@ -177,7 +162,7 @@ ul {
 }
 
 .section.leaving {
-    background-color: #9f3; /* Цвет фона при уходе */
+    background-color: #e67e22; /* Цвет фона при уходе */
 }
 
 .center {
@@ -192,7 +177,7 @@ ul {
 #avatar {
     width: 200px; /* Ширина аватара */
     height: 200px; /* Высота аватара */
-    border: 10px solid #aee2d9; /* Рамка аватара */
+    border: 10px solid #ecf0f1; /* Рамка аватара */
     border-radius: 50%; /* Круглая форма */
 }
 
@@ -202,7 +187,7 @@ ul {
     width: 100px; /* Ширина */
     height: 100px; /* Высота */
     border-radius: 50%; /* Круглая форма */
-    background-color: #008a75; /* Цвет фона */
+    background-color: #2980b9; /* Цвет фона */
     padding: 18px; /* Отступы */
 }
 
@@ -259,7 +244,7 @@ ul {
 .social-share-element {
     width: 40px; /* Ширина */
     height: 40px; /* Высота */
-    background-color: #008a75; /* Цвет фона */
+    background-color: #2980b9; /* Цвет фона */
     background-image: url("../../blog/img/social.png"); /* Фоновое изображение */
     transition: 0.5s; /* Плавный переход */
     display: inline-block; /* Отображение в строку */
@@ -269,7 +254,7 @@ ul {
 }
 
 .social-share-element:hover {
-    background-color: #096254; /* Цвет фона при наведении */
+    background-color: #16a085; /* Цвет фона при наведении */
     border-radius: 5px; /* Закругленные углы при наведении */
 }
 
