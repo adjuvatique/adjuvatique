@@ -1,91 +1,114 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Подключение иконок Font Awesome -->
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38205696-1']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    
+    <meta name="viewport" content="width=100%, initial-scale=1" />
+    <title>Резюме Александра Биланина</title>
+    <link rel="shortcut icon" href="../blog/img/owl.ico" />
+    
+    <link rel="stylesheet" href="vendor/jquery.pagepiling.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Александр Биланин</h1>
-            <p>Тестировщик ПО</p>
-            <p>Email: a.bilanins@yahoo.com | Телефон: +7 (920) 067-54-13</p>
-            <p>
-                <a href="https://t.me/adjuvatique" target="_blank" style="color: #fff;">
-                    <i class="fab fa-telegram"></i> Telegram
-                </a>
-            </p>
+    <div id="lang-panel">
+        <a class="lang" href="cn.html">中</a>
+        <a class="lang selected" href="#">Ru</a>
+    </div>
+    <div id="pagepiling">
+        <div class="section center" id="home">
+            <img id="avatar" src="img/avatar.jpg" />
+            <h1 id="title">Александр Биланин</h1>
+            <p id="subtitle">Страстный, креативный и преданный</p>
+            <h4>Тестировщик ПО</h4>
+
+            <h6><a href="http://example.com" target="_blank">Пример Студия Дизайна</a></h6>
+            <p><a href="mailto:a.bilanins@yahoo.com">a.bilanins@yahoo.com</a></p>
         </div>
-    </header>
-    <main class="container">
-        <div class="sidebar">
-            <section class="profile">
-                <img src="profile.jpg" alt="Фото профиля" class="profile-pic"> <!-- Замените на путь к вашему фото -->
-            </section>
-            <section class="education">
-                <h2>Образование</h2>
-                <div class="edu">
-                    <h3>Степень - Учебное заведение</h3>
-                    <p>Год - Год</p>
-                    <p>Описание курса или специальности.</p>
+
+        <div class="section" id="project">
+            <h1>Проекты</h1>
+            <div class="row">
+                <div class="col-2 center">
+                    <a class="circle-img" href="http://github.com/ваш_проект" target="_blank">
+                        <img src="img/ваш_проект.png" alt="Ваш проект" />
+                    </a>
                 </div>
-                <!-- Добавьте другие учебные заведения -->
-            </section>
-            <section class="skills">
-                <h2>Навыки</h2>
-                <ul>
-                    <li>Навык 1</li>
-                    <li>Навык 2</li>
-                    <li>Навык 3</li>
-                    <!-- Добавьте другие навыки -->
-                </ul>
-            </section>
+                <div class="col-4">
+                    <h2><a href="http://github.com/ваш_проект" target="_blank">Ваш проект</a></h2>
+                    <p>Описание вашего проекта.</p>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+            <p class="center"><a href="http://github.com/ваш_профиль" target="_blank" class="highlight">И многое другое на GitHub</a></p>
         </div>
-        <div class="content">
-            <section class="about">
-                <h2>О себе</h2>
-                <p>Краткое описание о себе и своих целях. Например, "Я тестировщик с опытом работы в различных проектах, стремлюсь к качеству и улучшению пользовательского опыта."</p>
-            </section>
-            <section class="experience">
-                <h2>Опыт работы</h2>
-                <div class="job">
-                    <h3>Должность - Компания</h3>
-                    <p>Год - Год</p>
-                    <p>Описание обязанностей и достижений.</p>
-                </div>
-                <!-- Добавьте другие места работы -->
-            </section>
-            <section class="languages">
-                <h2>Знание языков</h2>
-                <div class="language">
-                    <span>Русский</span>
-                    <div class="progress">
-                        <div class="progress-fill" style="width: 100%;"></div>
-                    </div>
-                </div>
-                <div class="language">
-                    <span>Английский</span>
-                    <div class="progress">
-                        <div class="progress-fill" style="width: 95%;"></div>
-                    </div>
-                </div>
-                <div class="language">
-                    <span>Латышский</span>
-                    <div class="progress">
-                        <div class="progress-fill" style="width: 90%;"></div>
-                    </div>
-                </div>
-            </section>
+        
+        <div class="section center" id="profession">
+            <h1>Профессии</h1>
+            <div class="tag-panel">
+                <div class="tag expert">Тестирование ПО</div>
+                <div class="tag familiar">JavaScript</div>
+            </div>
+            <div class="tag-panel">
+                <div class="tag expert">HTML</div>
+                <div class="tag expert">CSS</div>
+                <div class="tag familiar">Python</div>
+            </div>
         </div>
-    </main>
-    <footer>
-        <div class="container">
-            <p>Ссылки на ваши профили в социальных сетях или портфолио.</p>
+        
+        <div class="section center">
+            <h1>Образование</h1>
+            <h4>Студент в <em>Вашем университете</em></h4>
+            <p>Специальность: <em>Тестирование ПО</em></p>
+            <h3>Курс по тестированию</h3>
+            <p>Закончил в 2023 году</p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+        
+        <div class="section center">
+            <h1>Стажировка</h1>
+            <h4>Стажер по тестированию ПО @Ваша Компания</h4>
+            <p>Сентябрь 2022 - Февраль 2023</p>
+            <p>Связанные технологии: Selenium, JUnit</p>
+        </div>
+        
+        <div class="section center">
+            <h1>Текущая позиция</h1>
+            <h2>Тестировщик ПО @Ваша Компания</h2>
+            <p>В Москве, с Марта 2023</p>
+            <p>Работаю над улучшением качества программного обеспечения.</p>
+        </div>
+        
+        <div class="section center">
+            <h1>Узнать больше</h1>
+            <h2><a href="http://ваш_сайт.com" target="_blank">Личный сайт</a> | <a href="https://www.linkedin.com/in/ваш_профиль" target="_blank">LinkedIn</a></h2>
+            <p>Email: <a href="mailto:a.bilanins@yahoo.com" target="_blank">a.bilanins@yahoo.com</a></p>
+
+            <h2><a href="Резюме_Александра_Биланина.pdf" target="_blank" class="highlight">Скачать резюме</a></h2>
+            <div id="contact-panel">
+                <a class="social-share-element social-twitter" href="https://twitter.com/ваш_профиль" target="_blank" title="Следите за мной в Twitter"></a>
+                <a class="social-share-element social-github" href="https://github.com/ваш_профиль" target="_blank" title="Следите за мной на GitHub"></a>
+                <a class="social-share-element social-linkedin" href="http://www.linkedin.com/in/ваш_профиль" target="_blank" title="Следите за мной на LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+    
+    <link rel="stylesheet" href="../blog/css/font.css" type="text/css" />
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../blog/js/jquery-1.11.1.min.js"><\/script>');</script>
+    <script type="text/javascript" src="vendor/jquery.pagepiling.min.js"></script>
+    <script type="text/javascript" src="js/index.min.js"></script>
 </body>
 </html>
