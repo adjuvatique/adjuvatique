@@ -4,51 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Ваше Имя</h1>
-        <p>Ваша профессия (например, Тестировщик ПО)</p>
-        <p>Email: ваш_email@example.com</p>
-        <p>Телефон: +7 (999) 999-99-99</p>
+        <div class="container">
+            <h1>Ваше Имя</h1>
+            <p>Тестировщик ПО</p>
+            <p>Email: ваш_email@example.com | Телефон: +7 (999) 999-99-99</p>
+        </div>
     </header>
-    <section>
-        <h2>О себе</h2>
-        <p>Краткое описание о себе и своих целях.</p>
-    </section>
-    <section>
-        <h2>Опыт работы</h2>
-        <ul>
-            <li>
-                <strong>Должность</strong> - Компания (Год - Год)
+    <main class="container">
+        <section class="about">
+            <h2>О себе</h2>
+            <p>Краткое описание о себе и своих целях. Например, "Я тестировщик с опытом работы в различных проектах, стремлюсь к качеству и улучшению пользовательского опыта."</p>
+        </section>
+        <section class="experience">
+            <h2>Опыт работы</h2>
+            <div class="job">
+                <h3>Должность - Компания</h3>
+                <p>Год - Год</p>
                 <p>Описание обязанностей и достижений.</p>
-            </li>
+            </div>
             <!-- Добавьте другие места работы -->
-        </ul>
-    </section>
-    <section>
-        <h2>Образование</h2>
-        <ul>
-            <li>
-                <strong>Степень</strong> - Учебное заведение (Год - Год)
+        </section>
+        <section class="education">
+            <h2>Образование</h2>
+            <div class="edu">
+                <h3>Степень - Учебное заведение</h3>
+                <p>Год - Год</p>
                 <p>Описание курса или специальности.</p>
-            </li>
+            </div>
             <!-- Добавьте другие учебные заведения -->
-        </ul>
-    </section>
-    <section>
-        <h2>Навыки</h2>
-        <ul>
-            <li>Навык 1</li>
-            <li>Навык 2</li>
-            <li>Навык 3</li>
-            <!-- Добавьте другие навыки -->
-        </ul>
-    </section>
+        </section>
+        <section class="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Навык 1</li>
+                <li>Навык 2</li>
+                <li>Навык 3</li>
+                <!-- Добавьте другие навыки -->
+            </ul>
+        </section>
+    </main>
     <footer>
-        <p>Ссылки на ваши профили в социальных сетях или портфолио.</p>
+        <div class="container">
+            <p>Ссылки на ваши профили в социальных сетях или портфолио.</p>
+        </div>
     </footer>
 </body>
 </html>
-
